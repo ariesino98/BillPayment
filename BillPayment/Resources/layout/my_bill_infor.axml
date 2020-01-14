@@ -11,33 +11,32 @@
 	android:clipToPadding="true"
 	android:padding="10px"
 	>
-	<RelativeLayout
+	<LinearLayout
+		android:orientation="horizontal"
 		android:layout_gravity = "center"
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:padding="10dp"
 		android:id="@+id/relativeLayout1">
+		<ImageView
+		android:background ="@drawable/ic_evn"
+		android:layout_width="40dp"
+		android:layout_height="50dp"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/imageView1" />
 		<TextView
 			android:layout_gravity = "center"
-			android:text="Số thẻ:"
-			android:textAppearance="?android:attr/textAppearanceSmall"
-			android:layout_width="45.0dp"
-			android:layout_height="20.0dp"
-			android:id="@+id/textView2"
-			android:layout_marginRight="0.0dp"
-			android:layout_centerVertical="true" />
-		<EditText
-			android:layout_gravity = "center"
-			android:inputType="number"
-			android:layout_width="850px"
+			android:text="77410"
+			android:layout_width="80dp"
 			android:layout_height="wrap_content"
-			android:id="@+id/editText1"
-			android:layout_toRightOf="@id/textView2"
-			android:layout_marginLeft="0.0dp"
-			android:layout_alignBaseline="@id/textView2"
+			android:id="@+id/txtname"
+			android:layout_marginLeft="10.0dp"
 			android:layout_centerInParent="true" />
-	</RelativeLayout>
+		
+	</LinearLayout>
 	<LinearLayout
 		android:orientation="horizontal"
 		android:layout_gravity = "center"
@@ -48,41 +47,82 @@
 		android:id="@+id/relativeLayout1">
 		<TextView
 			android:layout_gravity = "center"
-			android:text="EXP"
-			android:textAppearance="?android:attr/textAppearanceSmall"
-			android:layout_width="45.0dp"
-			android:layout_height="20.0dp"
-			android:id="@+id/textView2"
-			android:layout_marginRight="0.0dp"
-			android:layout_centerVertical="true" />
-		<EditText
-			android:layout_gravity = "center"
-			android:inputType="date"
-			android:layout_width="600px"
-			android:layout_height="52.3dp"
-			android:id="@+id/editText1"
-			android:layout_toRightOf="@id/textView2"
-			android:layout_marginLeft="0.0dp"
-			android:layout_alignBaseline="@id/textView2"
-			android:layout_centerInParent="true" />
-		<TextView
-			android:layout_gravity = "center"
-			android:text="CSV:"
+			android:text="Chỉ số cũ:"
 			android:textAppearance="?android:attr/textAppearanceSmall"
 			android:layout_width="wrap_content"
 			android:layout_height="20.0dp"
 			android:id="@+id/textView2"
 			android:layout_marginRight="0.0dp"
 			android:layout_centerVertical="true" />
-		<EditText
+		<TextView
 			android:layout_gravity = "center"
-			android:inputType="number"
-			android:layout_width="150px"
+			android:text="77410"
+			android:layout_width="80dp"
 			android:layout_height="wrap_content"
-			android:id="@+id/editText1"
+			android:id="@+id/txtold"
 			android:layout_toRightOf="@id/textView2"
-			android:layout_marginLeft="0.0dp"
+			android:layout_marginLeft="5.0dp"
 			android:layout_alignBaseline="@id/textView2"
 			android:layout_centerInParent="true" />
+		
 	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_gravity = "center"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1">
+		<TextView
+			android:layout_gravity = "center"
+			android:text="Chỉ số cũ:"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="20.0dp"
+			android:id="@+id/textView2"
+			android:layout_marginRight="0.0dp"
+			android:layout_centerVertical="true" />
+		<TextView
+			android:layout_gravity = "center"
+			android:text="77410"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtold"
+			android:layout_toRightOf="@id/textView2"
+			android:layout_marginLeft="5.0dp"
+			android:layout_alignBaseline="@id/textView2"
+			android:layout_centerInParent="true" />
+		
 	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_gravity = "center"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1">
+		<TextView
+			android:layout_gravity = "center"
+			android:text="Chỉ số cũ:"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="20.0dp"
+			android:id="@+id/textView2"
+			android:layout_marginRight="0.0dp"
+			android:layout_centerVertical="true" />
+		<TextView
+			android:layout_gravity = "center"
+			android:text="77410"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtold"
+			android:layout_toRightOf="@id/textView2"
+			android:layout_marginLeft="5.0dp"
+			android:layout_alignBaseline="@id/textView2"
+			android:layout_centerInParent="true" />
+		
+	</LinearLayout>
+
+</LinearLayout>

@@ -140,12 +140,20 @@
 		android:id="@+id/txtagree"
 		android:layout_marginRight="0.0dp"
 		android:layout_centerVertical="true" />
-	
+	 <include layout="@layout/my_bill_infor" />
 	<Button
 		android:text="Thanh toán"
 		android:layout_gravity = "center"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:id="@+id/button1" />
-	
+
+	 <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
 </LinearLayout>
