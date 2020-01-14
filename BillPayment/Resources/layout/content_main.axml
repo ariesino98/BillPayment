@@ -1,16 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+	 android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_main">
+	android:clipToPadding="true"
+	android:padding="120px"
+	>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Hello World!" />
+	<TextView
+		android:text="Chọn loại hóa đơn"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/addBill" />
+	
+    <GridLayout
+			xmlns:tools="http://schemas.android.com/tools"
+			android:id="@+id/GridLayout_bills"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:columnCount="3"
+			android:layout_gravity = "center"
+			android:orientation="horizontal"
+			android:fitsSystemWindows="true"
+			android:layout_marginBottom = "16px"
+			android:layout_marginTop= "20px"
+			android:clipToPadding="true"
+			
+		>		
+			
+			<ImageButton
+					android:background ="@drawable/ic_electricity"
+					android:id="@+id/imgBtn_electric" 
+					android:layout_width = "200px"
+					android:layout_marginHorizontal = "80px"
+					android:layout_height = "200px"
+					android:layout_gravity = "center"
+			/>
+			<ImageButton
+					android:background ="@drawable/ic_water"
+					android:id="@+id/imgBtn_water" 
+					android:layout_width = "200px"
+					android:layout_height = "200px"
+					android:layout_marginLeft = "80px"
+					android:layout_gravity = "center"/>
+			<ImageButton
+					android:background ="@drawable/ic_education"
+					android:id="@+id/imgBtn_school" 
+					android:layout_width = "200px"
+					android:layout_height = "200px"
+					android:layout_marginHorizontal = "80px"
+					android:layout_gravity = "center"/>
+			<ImageButton
+					android:background ="@drawable/ic_house"
+					android:id="@+id/imgBtn_house" 
+					android:layout_width = "200px"
+					android:layout_marginTop = "80px"
+					android:layout_height = "200px"
+					android:layout_marginHorizontal = "80px"
+					android:layout_gravity = "center"/>
+			<ImageButton
+					android:background ="@drawable/ic_internet"
+					android:id="@+id/imgBtn_internet" 
+					android:layout_width = "200px"
+					android:layout_marginTop = "80px"
+					android:layout_height = "200px"
+					android:layout_marginHorizontal = "80px"
+					android:layout_gravity = "center"/>
+			<ImageButton
+					android:background ="@drawable/ic_rental_car"
+					android:id="@+id/imgBtn_car" 
+					android:layout_width = "200px"
+					android:layout_marginTop = "80px"
+					android:layout_height = "200px"
+					android:layout_marginHorizontal = "80px"
+					android:layout_gravity = "center"/>
+		
+			
+			
+	</GridLayout>
+	<TextView
+		android:text="Lịch"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1" />
+	<CalendarView
+		android:layout_gravity = "center"
+		android:layout_width="800px"
+		android:layout_height="wrap_content"
+		android:layout_weight="0.2"
+		android:firstDayOfWeek="2"
+		android:id="@+id/calendarView1" />
 
-</RelativeLayout>
+</LinearLayout>

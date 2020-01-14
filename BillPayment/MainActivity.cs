@@ -7,12 +7,14 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 
+
 namespace BillPayment
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "Hóa đơn", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-
+        TextView textView;
+      
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -23,8 +25,9 @@ namespace BillPayment
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
+            //textView = FindViewById<TextView>(Resource.Id.textView1);
+            
         }
-
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.menu_main, menu);

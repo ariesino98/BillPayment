@@ -70,7 +70,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\content_main.axml">
-          <SubType>Designer</SubType>
+      <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
@@ -98,6 +98,42 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\my_bills_pay.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_education.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_electricity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_internet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_rental_car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\bill_detail.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\my_bill_card.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_evn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

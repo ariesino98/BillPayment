@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_gravity = "center"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1">
+		<ImageView
+		android:background ="@drawable/ic_evn"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/imageView1" />
+		<TextView
+			android:layout_gravity = "center"
+			android:text="77410"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtold"
+			android:layout_toRightOf="@id/name"
+			android:layout_marginLeft="5.0dp"
+			android:layout_alignBaseline="@id/textView2"
+			android:layout_centerInParent="true" />
+		
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_gravity = "center"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1">
+		<TextView
+			android:layout_gravity = "center"
+			android:text="Chỉ số cũ:"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="20.0dp"
+			android:id="@+id/textView2"
+			android:layout_marginRight="0.0dp"
+			android:layout_centerVertical="true" />
+		<TextView
+			android:layout_gravity = "center"
+			android:text="77410"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtold"
+			android:layout_toRightOf="@id/textView2"
+			android:layout_marginLeft="5.0dp"
+			android:layout_alignBaseline="@id/textView2"
+			android:layout_centerInParent="true" />
+		
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_gravity = "center"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1">
+		<TextView
+			android:layout_gravity = "center"
+			android:text="Chỉ số cũ:"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="20.0dp"
+			android:id="@+id/textView2"
+			android:layout_marginRight="0.0dp"
+			android:layout_centerVertical="true" />
+		<TextView
+			android:layout_gravity = "center"
+			android:text="77410"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtold"
+			android:layout_toRightOf="@id/textView2"
+			android:layout_marginLeft="5.0dp"
+			android:layout_alignBaseline="@id/textView2"
+			android:layout_centerInParent="true" />
+		
+	</LinearLayout>
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_gravity = "center"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1">
+		<TextView
+			android:layout_gravity = "center"
+			android:text="Chỉ số cũ:"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_height="20.0dp"
+			android:id="@+id/textView2"
+			android:layout_marginRight="0.0dp"
+			android:layout_centerVertical="true" />
+		<TextView
+			android:layout_gravity = "center"
+			android:text="77410"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/txtold"
+			android:layout_toRightOf="@id/textView2"
+			android:layout_marginLeft="5.0dp"
+			android:layout_alignBaseline="@id/textView2"
+			android:layout_centerInParent="true" />
+		
+	</LinearLayout>
+
+</LinearLayout>
