@@ -3,8 +3,6 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/my_bill_pay"
 	 android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -19,20 +17,20 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:padding="10dp"
-		android:id="@+id/relativeLayout1">
+		android:id="@+id/rl1">
 		<ImageView
 		android:background ="@drawable/ic_evn"
 		android:layout_width="40dp"
 		android:layout_height="50dp"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/imageView1" />
+		android:id="@+id/ic_ncc" />
 		<TextView
 			android:layout_gravity = "center"
-			android:text="77410"
-			android:layout_width="80dp"
+			android:text="Điện lực miền Nam"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/txtname"
+			android:id="@+id/txtnccname"
 			android:layout_marginLeft="10.0dp"
 			android:layout_centerInParent="true" />
 		
@@ -44,22 +42,22 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/relativeLayout1">
+		android:id="@+id/rl2">
 		<TextView
 			android:layout_gravity = "center"
-			android:text="Chỉ số cũ:"
+			android:text="Mã khách hàng:"
 			android:textAppearance="?android:attr/textAppearanceSmall"
 			android:layout_width="wrap_content"
 			android:layout_height="20.0dp"
-			android:id="@+id/textView2"
+			android:id="@+id/txtid"
 			android:layout_marginRight="0.0dp"
 			android:layout_centerVertical="true" />
 		<TextView
 			android:layout_gravity = "center"
-			android:text="77410"
+			android:text="KH77410"
 			android:layout_width="80dp"
 			android:layout_height="wrap_content"
-			android:id="@+id/txtold"
+			android:id="@+id/txtmyid"
 			android:layout_toRightOf="@id/textView2"
 			android:layout_marginLeft="5.0dp"
 			android:layout_alignBaseline="@id/textView2"
@@ -73,25 +71,23 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/relativeLayout1">
+		android:id="@+id/rl3">
 		<TextView
 			android:layout_gravity = "center"
-			android:text="Chỉ số cũ:"
+			android:text="Tên khách hàng:"
 			android:textAppearance="?android:attr/textAppearanceSmall"
 			android:layout_width="wrap_content"
 			android:layout_height="20.0dp"
-			android:id="@+id/textView2"
+			android:id="@+id/txtname"
 			android:layout_marginRight="0.0dp"
 			android:layout_centerVertical="true" />
 		<TextView
 			android:layout_gravity = "center"
-			android:text="77410"
-			android:layout_width="80dp"
+			android:text="VO KIEU NGAN"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/txtold"
-			android:layout_toRightOf="@id/textView2"
 			android:layout_marginLeft="5.0dp"
-			android:layout_alignBaseline="@id/textView2"
+			android:id="@+id/txtmyname"
 			android:layout_centerInParent="true" />
 		
 	</LinearLayout>
@@ -102,25 +98,23 @@
 		android:minHeight="25px"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/relativeLayout1">
+		android:id="@+id/rl4">
 		<TextView
-			android:layout_gravity = "center"
-			android:text="Chỉ số cũ:"
+			android:layout_gravity = "top"
+			android:text="Địa chỉ:"
 			android:textAppearance="?android:attr/textAppearanceSmall"
 			android:layout_width="wrap_content"
 			android:layout_height="20.0dp"
-			android:id="@+id/textView2"
+			android:id="@+id/txtadd"
 			android:layout_marginRight="0.0dp"
 			android:layout_centerVertical="true" />
 		<TextView
 			android:layout_gravity = "center"
-			android:text="77410"
-			android:layout_width="80dp"
+			android:text="P7.10 chung cư ABC Plaza, phường 4, quận 1, TPHCM"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:id="@+id/txtold"
-			android:layout_toRightOf="@id/textView2"
+			android:id="@+id/txtmyadd"
 			android:layout_marginLeft="5.0dp"
-			android:layout_alignBaseline="@id/textView2"
 			android:layout_centerInParent="true" />
 		
 	</LinearLayout>

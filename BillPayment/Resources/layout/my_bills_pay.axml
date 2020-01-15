@@ -2,15 +2,17 @@
 <LinearLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical"
+	android:padding="16dp"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content">
 		<ImageView
-			android:src="@drawable/ic_bill"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
+			android:background="@drawable/ic_bill"
+			android:layout_width="60dp"
+			android:layout_height="60dp"
+			android:padding="5dp"
 			android:minWidth="25px"
 			android:minHeight="25px"
 			android:id="@+id/imageView1" />
@@ -23,7 +25,7 @@
 			android:id="@+id/textView1" />
 	</LinearLayout>
 
-	<include layout="@layout/my_bill_infor" />
+	<include layout="@layout/ncc_infor" />
 
 	<TextView
 		android:text="Phương thức thanh toán"

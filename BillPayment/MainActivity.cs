@@ -14,7 +14,7 @@ namespace BillPayment
     public class MainActivity : AppCompatActivity
     {
         TextView textView;
-      
+        ImageButton elec, water, school, house,car;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -25,8 +25,9 @@ namespace BillPayment
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
-            //textView = FindViewById<TextView>(Resource.Id.textView1);
-            
+            elec = FindViewById<ImageButton>(Resource.Id.imgBtn_electric);
+            elec.Click += ElecOnClick;
+
         }
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -51,6 +52,10 @@ namespace BillPayment
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
-	}
+        private void ElecOnClick(object sender, EventArgs eventArgs)
+        {
+            SetContentView(Resource.Layout.bill_detail);
+        }
+    }
 }
 
